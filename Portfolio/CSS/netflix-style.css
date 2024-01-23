@@ -1,0 +1,257 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* main{
+    background-image: url("images/netflix-background.jpg");
+} */
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+#logo{
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header button{
+    background-color: rgb(211, 0, 0);
+    height: 50%;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-left: 60%;
+}
+header h1{ color: rgb(211, 0, 0);}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80dvh;
+    margin: 5px;
+}
+.wrapper h1{font-size: 2.5rem;}
+.wrapper h4, .wrapper h3{
+    font-size: 1.2rem;
+    margin-bottom: 4%;
+    text-align: center;
+}
+form{
+    display: flex;
+    width: 100%;
+    height: 60px; 
+}
+ form input[type=text]{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 50px;
+}
+.container-1,.container-2,.container-3,.container-4{
+    display: flex;
+    border-bottom: 4px solid rgb(34, 34, 34);
+    border-top: 4px solid rgb(34, 34, 34);
+    padding: 20px;
+}
+.container-1{
+    border-top: 9px solid rgb(34, 34, 34);
+}
+.right-content{
+    width: 50%;
+}
+.left-content{
+    width: 50%;
+}
+.left-content img,.right-content img{
+    width: 500px;
+    height: 400px;
+}
+.fq{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container-5{
+    border-bottom: 8px solid rgb(37, 37, 37); 
+}
+.form-2{
+    margin: auto;
+    margin-bottom: 2%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.box{
+    width: 80%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+    margin: 5px 40px 5px 130px;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.email{
+    width: auto;
+    /* height: 50px; */
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(122, 120, 120);
+    margin-right: 3%;
+}
+::placeholder{
+    font-size: 19px;
+    padding-left: 10px;
+    color: rgb(175, 174, 174);
+}
+.emailbtn{
+    width: auto;
+    /* height: 55px; */
+    background-color: rgb(245, 24, 24);
+    color: white;
+    border-radius: 5px;
+    font-size: 21px;
+    border: none; 
+}
+header h1{
+    margin-left: 120px;
+    font-size: 50px;
+}
+.container-2 .right-content, .container-4 .right-content{
+    margin: 100px 110px 0 0;
+}
+
+.ans-1,.ans-2{
+    width: 79.2%;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+    margin: 0px 50px 7px 130px;
+    /* margin: auto; */
+    font-size: 19px;
+    padding: 10px 10px 10px 20px;
+    display: none;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+footer li {
+    margin: 30px;
+    list-style: none;
+}
+footer a{
+    color: rgb(202, 197, 197);
+   
+}
+
+.show{
+    display: block;
+}
+
+hide{
+    display: none;
+}
+
+/*Use a media query to add a breakpoint at 800px:*/
+@media only screen and (max-width:800px) {
+
+    #logo h1{
+        position: absolute;
+        width: 100%;
+        margin: 5%;
+        font-size: 2rem;
+    }
+    header button{
+        width: auto;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        top: 1%;
+        left: 72%;
+    }
+    .container-1,.container-2,.container-3,.container-4,.container-5{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .left-content,.right-content{
+        width: 100%;
+        text-align: center;
+      }
+    }   
+    #try h1,#try h2{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 20%;
+        font-size: 3vh;
+    }
+
+    .fq{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        margin: 1%;
+        width: auto;
+    }
+    .ans-1,.ans-2{
+        margin: 0;
+        width: auto;
+    }
+    .form-2{
+        display: flex;
+        flex-direction: column;  
+    }
+    form{
+        margin: 5%;
+    }
+    .emailbtn,.email{
+        width: 100%;
+        height: 2.5em;
+        margin-bottom: 5%;   
+    }
+    footer{
+        width: 100%;
+        display: inline;
+        justify-content: unset;}
+  }
+
+  @media screen and (min-width:900px) {
+    .wrapper h1{
+        font-size:4rem;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+    .wrapper h4, .wrapper h3{
+        font-size: 2rem;
+        margin-bottom: 1%;
+    }
+    #f{
+        margin-top: 5%;
+
+    }
+  
+  }
